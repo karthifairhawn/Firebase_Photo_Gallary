@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useStorage from '../hooks/useStorage';
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const ProgresBar = ( {file, setFile }) => {
-    const { url, progress } = useStorage(file);
-    useEffect(() => {
-        if(url){
+    const { progress, url } = useStorage(file);
+
+
+        if(url && file){
             setFile(null);
         }
-    }, [url]);
+
     return ( 
         <motion.div className="progress-bar" 
             initial={{width:0}}
