@@ -8,7 +8,7 @@ var firebaseConfig = {
     projectId: "photo-gallary-1d572",
     storageBucket: "photo-gallary-1d572.appspot.com",
     messagingSenderId: "442962032490",
-appId: "1:442962032490:web:e9450c24c689552b6f5713"
+    appId: "1:442962032490:web:e9450c24c689552b6f5713"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
